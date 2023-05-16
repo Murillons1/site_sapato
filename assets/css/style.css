@@ -20,6 +20,7 @@ body{
     background-color: gray;
 }
 
+
 nav li{
     display: block;
     margin-right: 20px;
@@ -29,7 +30,7 @@ nav a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;    
+    font-size: 1.5rem;    
 }
 
 /* nav a:hover{
@@ -139,7 +140,7 @@ footer{
 }
 
 
-@media(min-width:400px){
+@media(min-width:400px) and (max-width:600px ){
     body, .texto-principal{
         font-size: 1rem;
         padding: 12px;
