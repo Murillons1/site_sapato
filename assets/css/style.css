@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkgray;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* css cabeçalho */
+
+.cabecalho{
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+nav li{
+    display: block;
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;    
+}
+
+/* nav a:hover{
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    opacity: 0.7;
+    cursor: pointer;   
+} */
+
+/* header navbar */
+
+.btn-menu{
+    margin-right: 8vw;
+    background-color:   gray;
+    color: whitesmoke;
+    border: 1px  solid gray;
+}
+
+.navbar{   
+    position: absolute;
+    top: 31.2vh;
+    left: 1.1vw;
+    width: 25vw;
+    height: 64vh;
+    background-color: gray;
+    border-radius: 2px 5px 10px;
+    color: whitesmoke;
+    transition: 200ms;
+    cursor: pointer;
+}
+.navbar_ativo{
+    left: -200vw;
+    transition: 200ms;
+}
+
+
+a:visited{
+    color: whitesmoke;
+}
+.menu-itens{
+    list-style: none;
+}
+.menu-itens a{
+    text-decoration: none;
+}
+
+
+
+/* css principal */
+
+h1{
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+.jovem-escolhendo-sapato{
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px; 
+}
+
+.img-jovem, .img-moca, .icon{
+    border: 1px solid rgba(160,160,160,0.9);
+    border-radius: 24px;
+    opacity: 0.6;
+}
+
+/* .img-jovem:hover, .img-moca:hover, .icon:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+    opacity: 1.0;
+    cursor: pointer; 
+} */
+
+.texto-principal{
+    margin: 4px;
+    padding: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* css footer */
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.5rem;
+}
+
+footer{
+    padding: 4px;
+    background-color: rgba(160,160,160,0.9);;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+
+@media(min-width:400px){
+    body, .texto-principal{
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .cabecalho{
+        position: static;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        background-color: gray;        
+    }
+
+    
+
+
+    .cabecalho ul li a{
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cabecalho span{
+        display: flex;
+        justify-content: center;
+    }
+    main img{
+        height: 120px;
+        width: 240px;
+        }
+
+    
+    /* h1, nav a:hover{
+        font-size: 2.5rem;
+    } */
+
+    nav li{
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a, .rodape{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        font-size:1rem;
+    }
+}
+@media(min-width:600px){
+    body, .texto-principal{
+        font-size: 2.25rem;
+        padding: 16px;
+    }
+
+    .cabecalho{
+        padding: 16px;
+    }
+
+    /* h1, nav a:hover{
+        font-size: 2.5rem;
+    } */
+
+    nav li{
+        display: inline;
+        margin-right: 40px;
+    }
+}
+
+@media(min-width:900px){
+    body, .texto-principal{
+        font-size: 2.25rem;
+    }
+}
+
+@media(min-width:1200px){
+
+    /* Não será feita a confirguração
+    é apenas para lebrar do valor  */
+}
+
+@media(min-width:1800px){
+
+    /* Não será feita a confirguração
+    é apenas para lebrar do valor  */
+}
+
